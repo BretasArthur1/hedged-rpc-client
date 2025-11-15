@@ -172,20 +172,6 @@ let config = HedgeConfig {
 - Cost-extremely-sensitive operations
 - Non-time-critical background jobs
 
-## Performance Impact
-
-**Latency Reduction:**
-- P50: ~10-30% faster
-- P95: ~40-60% faster  
-- P99: **70-90% faster** (eliminates tail latency)
-
-**Cost Trade-off:**
-- Conservative: +10-30% RPC calls
-- Low Latency: +50-100% RPC calls
-- Aggressive: +100-200% RPC calls
-
-The TUI dashboard helps you find the optimal balance for your use case.
-
 ## Examples
 
 See `examples/` directory:
@@ -253,7 +239,6 @@ This design ensures minimal overhead while maximizing responsiveness.
 
 - [Request Hedging Pattern](https://medium.com/javarevisited/request-hedging-a-concurrency-pattern-every-senior-engineer-should-know-bdfaa2da8d40)
 - [The Tail at Scale (Google Research)](https://cacm.acm.org/research/the-tail-at-scale/)
-- [Hedged Requests at Facebook](https://research.facebook.com/publications/the-power-of-two-random-choices-a-survey-of-techniques-and-results/)
 
 ## License
 
