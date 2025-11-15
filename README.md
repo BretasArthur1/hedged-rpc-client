@@ -47,17 +47,17 @@ Result: 200ms response time (instead of 400ms)
 │ Helius  │ │ Triton  │ │QuickNode │
 │  RPC    │ │  RPC    │ │   RPC    │
 └────┬────┘ └────┬────┘ └─────┬────┘
-     │           │             │
-     │ 400ms     │ 200ms ✓     │ 300ms
-     │           │             │
-     └───────────┴─────────────┘
+     │           │            │
+     │ 200ms     │ 150ms ✓    │ 400ms
+     │           │            │
+     └───────────┴────────────┘
                  │
                  │ First successful response wins
                  ▼
          ┌──────────────────┐
          │  Return Result   │
          │  Provider: Triton│
-         │  Latency: 200ms  │
+         │  Latency: 150ms  │
          └──────────────────┘
 ```
 
